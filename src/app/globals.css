@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-manrope), ui-sans-serif,
+    system-ui, sans-serif;
+
+  --color-paper: #f3f1e9;
+  --color-card: #fbfaf5;
+  --color-ink: #23261f;
+  --color-soft: #646a5b;
+  --color-faint: #90957f;
+  --color-line: #e0dccb;
+  --color-linestrong: #c9c4ab;
+  --color-accent: #d4562a;
+  --color-accentdeep: #a83c14;
+  --color-accentsoft: #fbe7dd;
+  --color-moss: #4f7a3d;
+  --color-mossdeep: #3c5f2e;
+  --color-mosssoft: #e7efdc;
+  --color-brick: #b23b26;
+  --color-bricksoft: #f8e5de;
+  --color-amber: #96690c;
+  --color-ambersoft: #f5ebcf;
+  --color-panel: #242920;
+  --color-panelink: #b9bfa8;
+  --color-paneldeep: #1b1f18;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle topographic contour pattern */
+.contour {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420' viewBox='0 0 420 420'%3E%3Cg fill='none' stroke='%2323261f' stroke-opacity='0.05'%3E%3Ccircle cx='210' cy='210' r='46'/%3E%3Ccircle cx='210' cy='210' r='92'/%3E%3Ccircle cx='210' cy='210' r='138'/%3E%3Ccircle cx='210' cy='210' r='184'/%3E%3Cpath d='M-20 388c62-44 124 24 186-16s126-76 194-28'/%3E%3Cpath d='M-20 408c62-44 124 24 186-16s126-76 194-28'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 420px 420px;
+}
+
+.contour-dark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420' viewBox='0 0 420 420'%3E%3Cg fill='none' stroke='%23f3f1e9' stroke-opacity='0.05'%3E%3Ccircle cx='210' cy='210' r='46'/%3E%3Ccircle cx='210' cy='210' r='92'/%3E%3Ccircle cx='210' cy='210' r='138'/%3E%3Ccircle cx='210' cy='210' r='184'/%3E%3Cpath d='M-20 388c62-44 124 24 186-16s126-76 194-28'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 420px 420px;
+}
+
+::selection {
+  background: var(--color-accentsoft);
+  color: var(--color-accentdeep);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-linestrong);
+  border-radius: 8px;
+  border: 2px solid var(--color-paper);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.rise {
+  animation: rise 0.35s ease both;
+}

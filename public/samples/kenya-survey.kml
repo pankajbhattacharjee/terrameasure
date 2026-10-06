@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.earth.google.com/kml/2.2">
+  <Document>
+    <name>Kenya Grid Survey 2026</name>
+    <description>Substations, transmission lines and reserved buffers near Nairobi (WGS 84).</description>
+    <Folder>
+      <name>Points</name>
+      <Placemark>
+        <name>Substation A</name>
+        <description>132kV substation compound</description>
+        <ExtendedData>
+          <Data name="asset_id"><value>SUB-A-0117</value></Data>
+          <Data name="category"><value>substation</value></Data>
+          <Data name="elevation_m"><value>1520</value></Data>
+          <Data name="status"><value>active</value></Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+                36.81620 -1.28890 1520
+              </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Substation B</name>
+        <description>66kV substation compound</description>
+        <ExtendedData>
+          <Data name="asset_id"><value>SUB-B-0221</value></Data>
+          <Data name="category"><value>substation</value></Data>
+          <Data name="elevation_m"><value>1498</value></Data>
+          <Data name="status"><value>active</value></Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+                36.82980 -1.28230 1498
+              </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Lines</name>
+      <Placemark>
+        <name>Transmission line A–B</name>
+        <description>132kV double circuit, 4 towers</description>
+        <ExtendedData>
+          <Data name="asset_id"><value>TL-132-004</value></Data>
+          <Data name="voltage_kv"><value>132</value></Data>
+        </ExtendedData>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+                36.81620 -1.28890 1520,
+                36.82190 -1.28670 1505,
+                36.82510 -1.28520 1500,
+                36.82980 -1.28230 1498
+              </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Access road</name>
+        <description>Gravel access road from national highway</description>
+        <ExtendedData>
+          <Data name="asset_id"><value>RD-ACC-19</value></Data>
+          <Data name="surface"><value>gravel</value></Data>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+                36.81500 -1.28950 1518,
+                36.81620 -1.28890 1520,
+                36.81750 -1.28780 1516,
+                36.81980 -1.28610 1509
+              </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Polygons</name>
+      <Placemark>
+        <name>Substation A footprint</name>
+        <description>Compound boundary with transformer bay cut out</description>
+        <ExtendedData>
+          <Data name="asset_id"><value>PLT-A-FP</value></Data>
+          <Data name="land_use"><value>utility</value></Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                36.81520 -1.28950 1519,
+                36.81720 -1.28950 1519,
+                36.81720 -1.28830 1520,
+                36.81520 -1.28830 1520,
+                36.81520 -1.28950 1519
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+          <innerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                36.81580 -1.28920 1520,
+                36.81580 -1.28860 1520,
+                36.81660 -1.28860 1520,
+                36.81660 -1.28920 1520,
+                36.81580 -1.28920 1520
+              </coordinates>
+            </LinearRing>
+          </innerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Reserved buffer east</name>
+        <description>Future substation reservation</description>
+        <ExtendedData>
+          <Data name="asset_id"><value>RES-E-077</value></Data>
+          <Data name="land_use"><value>reserved</value></Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                36.83100 -1.28150 1500,
+                36.83300 -1.28150 1500,
+                36.83300 -1.28030 1499,
+                36.83100 -1.28030 1499,
+                36.83100 -1.28150 1500
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Compound parcels 3–4</name>
+        <description>Two adjacent compound parcels as a MultiGeometry</description>
+        <ExtendedData>
+          <Data name="asset_id"><value>PLT-3-4</value></Data>
+        </ExtendedData>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>
+                36.81300 -1.29050 1522,
+                36.81420 -1.29050 1522,
+                36.81420 -1.28970 1521,
+                36.81300 -1.28970 1521,
+                36.81300 -1.29050 1522
+              </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>
+                36.81450 -1.29050 1522,
+                36.81550 -1.29050 1522,
+                36.81550 -1.28970 1521,
+                36.81450 -1.28970 1521,
+                36.81450 -1.29050 1522
+              </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+    </Folder>
+    <Placemark>
+      <name>Boundary marker 42</name>
+      <description>Survey marker — geometry pending digitization</description>
+      <ExtendedData>
+        <Data name="asset_id"><value>BM-042</value></Data>
+      </ExtendedData>
+    </Placemark>
+  </Document>
+</kml>

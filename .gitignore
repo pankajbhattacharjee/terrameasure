@@ -1,0 +1,69 @@
+# ---- dependencies ----
+node_modules/
+.pnp
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ---- next.js ----
+.next/
+.next-turbo/
+out/
+
+# ---- build / runtime ----
+build/
+dist/
+*.tsbuildinfo
+.npm
+.eslintcache
+.cache/
+.parcel-cache/
+.turbo/
+
+# ---- env / secrets ----
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ---- logs ----
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# ---- editor / OS ----
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ---- coverage / test ----
+coverage/
+.nyc_output/
+*.lcov
+/junit/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# ---- drizzle / migrations snapshots ----
+# (drizzle dirs that are local-generated, not the config)
+drizzle/meta/
+drizzle/*.sql
+
+# ---- uploads / scratch ----
+/tmp/
+uploads/
+scratch/
